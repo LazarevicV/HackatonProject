@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Response;
 
 class RegisterController extends Controller
 {
+    public function __construct(){
+        parent::__construct();
+    }
     public function register(Request $request){
         return view('stranice.register');
     }

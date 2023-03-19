@@ -1,5 +1,8 @@
 @extends('layout.main_layout')
 
+@section('title')
+    Verivikacija lokacije
+@endsection
 @section('content')
     <section>
         <div class="container">
@@ -32,3 +35,4 @@
     </section>
 
 @endsection
+

@@ -38,4 +38,8 @@ class User extends Model
                 'active' => 0
             ]);
     }
+
+    public function LogInUser($email, $password){
+        return User::where(["email" => $email,"password" => $password])->first();
+    }
 }
